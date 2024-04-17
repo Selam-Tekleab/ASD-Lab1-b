@@ -1,0 +1,23 @@
+# GENERAL APPLICATION CONFIG SETTINGS
+logging:
+  level:
+    root: info
+
+spring:
+  main:
+    banner-mode: off
+
+  # DATABASE CONFIG
+  datasource:
+    url: jdbc:mysql://localhost:3306/ADSDB
+    username: root
+    password: GodGrace20
+
+  # JPA/Hibernate Properties
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
